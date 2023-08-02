@@ -1,6 +1,7 @@
 'use client'
 import React , {useState} from 'react'
 import Menu from './Menu'
+import Image from 'next/image'
 
 function Navbar() {
 
@@ -31,7 +32,7 @@ function Navbar() {
                     </div>
                 </div>
                 <div className='hidden lg:block'>
-                    <img src="menu-line.png" className='w-7' onClick={handleOnClick} />
+                    <Image src="/menu-line.png" alt='My Photo' width="100" height="100" className='w-7' onClick={handleOnClick} />
                 </div>
             </div>
             <div>

@@ -1,5 +1,7 @@
 'use client'
 
+import Image from "next/image"
+
 export default function Home() {
 
   return (
@@ -7,16 +9,18 @@ export default function Home() {
       <div className="mt-40 lg:mt-20 ml-44 xl:ml-32 lg:ml-0 lg:justify-center lg:items-center">
         <div className="lg:flex-col lg:flex lg:justify-center lg:items-center">
           <h1 class="text-[#EEEEEE] font-[Poppins] font-bold lg:text-5xl text-7xl xl:text-6xl xs:text-4xl  pb-5">
-            Hello, I'm Aniket,
+            Hello, I&lsquo;m Aniket,
           </h1>
           <h2 class="text-[#00ADB5] text-5xl  xs:text-2xl xl:text-4xl lg:text-4xl font-[Poppins] font-bold pb-3">
             FrontEnd Developer
           </h2>
         </div>
         <div className=" hidden lg:flex lg:justify-center lg:items-center">
-        <img
+        <Image
           alt=""
-          src="me.png.jpg"
+          width="100"
+          height="100"
+          src="/me.png.jpg"
           class="rounded-xl lg:w-64 xs:w-52 m-4 w-80" style={{boxShadow:"rgb(0, 173, 181) 0px 1px 17px 8px"}}
         />
       </div>
@@ -43,9 +47,11 @@ export default function Home() {
             <h1 class="text-[#FFFFFF] font-[Poppins] font-normal text-base drop-shadow-md">
               Download CV
             </h1>
-            <img
-              alt=""
-              src="download (1).png"
+            <Image
+              alt="download icon"
+              width="100"
+              height="100"
+              src="/download (1).png"
               class="ml-1 w-6 drop-shadow-md"
             />
           </a>
@@ -54,9 +60,11 @@ export default function Home() {
       </div>
 
       <div className="lg:hidden">
-        <img
-          alt=""
-          src="me.png.jpg"
+        <Image
+          alt="me"
+          width="100"
+          height="100"
+          src="/me.png.jpg"
           class="rounded-xl mr-44 xl:mr-16 mt-24 xl:w-72 w-80 " style={{boxShadow:"rgb(0, 173, 181) 0px 1px 17px 8px"}}
         />
       </div>
