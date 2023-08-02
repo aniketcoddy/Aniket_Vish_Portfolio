@@ -2,12 +2,6 @@
 
 export default function Home() {
 
-  const myStyle = {
-    backgroundImage: "url(/Projects.png)",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-  };
-
   return (
     <div  className="flex lg:flex-col justify-between lg:justify-center lg:items-center" >
       <div className="mt-40 lg:mt-20 ml-44 xl:ml-32 lg:ml-0 lg:justify-center lg:items-center">
