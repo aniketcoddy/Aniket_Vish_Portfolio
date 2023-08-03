@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import ProjectCard from './ProjectCard';
 
 function Projects() {
@@ -67,7 +67,7 @@ function Projects() {
 
 
     return (
-        <div className=" flex flex-col h-fit mt-36 lg:mt-24 mb-36 pb-24" style={myStyle}>
+        <div className=" flex flex-col h-fit mt-36 lg:mt-24 mb-24 pb-24" style={myStyle}>
             <div>
                 <div className='flex gap-4 m-20 sm:m-16 lg:justify-center'>
                     <h1 className='text-6xl font-semibold text-[#EEEEEE] sm:text-4xl font-[Roboto]'>My</h1>

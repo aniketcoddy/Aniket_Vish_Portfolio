@@ -1,5 +1,4 @@
 'use client'
-
 import Image from "next/image"
 
 export default function Home() {
@@ -17,11 +16,11 @@ export default function Home() {
         </div>
         <div className=" hidden lg:flex lg:justify-center lg:items-center">
         <Image
-          alt="my image"
-          width="100"
-          height="100"
+          alt="me"
+          width={320}
+          height={100}
           src="/me.png"
-          class="rounded-xl lg:w-64 xs:w-52 m-4 w-80" style={{boxShadow:"rgb(0, 173, 181) 0px 1px 17px 8px"}}
+          class="rounded-xl lg:w-64 xs:w-52 m-4" style={{boxShadow:"rgb(0, 173, 181) 0px 1px 17px 8px"}}
         />
       </div>
       <div className="lg:flex lg:flex-col lg:justify-center lg:items-center" >
@@ -62,10 +61,10 @@ export default function Home() {
       <div className="lg:hidden">
         <Image
           alt="me"
-          width="100"
-          height="100"
-          src="/me.png.jpg"
-          class="rounded-xl mr-44 xl:mr-16 mt-24 xl:w-72 w-80 " style={{boxShadow:"rgb(0, 173, 181) 0px 1px 17px 8px"}}
+          width={320}
+          height={100}
+          src="/me.png"
+          class="rounded-xl mr-44 xl:mr-16 mt-24 xl:w-72" style={{boxShadow:"rgb(0, 173, 181) 0px 1px 17px 8px"}}
         />
       </div>
     </div>
