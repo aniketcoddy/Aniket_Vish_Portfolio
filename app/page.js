@@ -48,10 +48,10 @@ export default function Home() {
             </h1>
             <Image
               alt="download icon"
-              width="100"
-              height="100"
-              src="/download (1).png"
-              class="ml-1 w-6 drop-shadow-md"
+              width={24}
+              height={100}
+              src="/download.png"
+              class="ml-1 drop-shadow-md"
             />
           </a>
         </div>

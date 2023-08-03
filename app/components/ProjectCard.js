@@ -7,9 +7,9 @@ function ProjectCard({ image, git, launch, name, topic, description }) {
       <div className=' p-2 xs:p-1 bg-[rgba(57,62,70,0.5)] backdrop-blur-sm '>
         <Image
           alt='project'
-          width="100"
-          height="100"
-          src={image} className='w-36 xs:w-24 xxs:w-20' />
+          width={144}
+          height={100}
+          src={image} className='xs:w-24 xxs:w-20' />
         <div className='flex'>
           <a href={git} className='flex justify-center items-center'><h1 className='text-sm xs:text-xs xxs:text-[9px] xs:m-1  xs:mt-3 font-[Roboto] text-[#000000] border-[#00ADB5] bg-[#00ADB5] m-2 border-2  px-1 rounded-lg font-semibold'>Git</h1></a>
           <a href={launch} target="_blank" className='flex justify-center items-center'><h1 className='text-sm xs:text-xs xxs:text-[9px] xs:m-1  xs:mt-3 font-[Roboto] text-[#000000] border-[#00ADB5] bg-[#00ADB5] m-2 border-2  px-1 rounded-lg font-semibold'>Launch</h1></a>
