@@ -11,7 +11,7 @@ export default function About() {
                     <Image src="/lightbulb.png" alt='bulb' width={60} height={100} className='sm:w-9' />
                 </div>
                 <div className=' flex flex-col xl:items-center gap-6 sm:gap-4'>
-                    <p className="text-[white] font-[Poppins] text-sm xs:text-[10px] sm:text-xs xs:w-80 sm:w-96 w-[491px] font-normal">Hello, my name is Aniket Vishnoi, and I'm a front-end developer who will shortly transition to full-stack development.I recently earned a btech in computer science and plan to continue honing my development abilities through 2022.
+                    <p className="text-[white] font-[Poppins] text-sm xs:text-[10px] sm:text-xs xs:w-80 sm:w-96 w-[491px] font-normal">Hello, my name is Aniket Vishnoi, and I am a front-end developer who will shortly transition to full-stack development.I recently earned a btech in computer science and plan to continue honing my development abilities through 2022.
                         To date, I have developed my skills in working with HTML, CSS, javascript, some open source libraries like Reactjs and Redux, some frameworks like Next.js, Tailwind CSS, and bootstrap, some development tools like vs code, and some design software like Figma.
                         with the hope of learning much more in the coming future.
                     </p>

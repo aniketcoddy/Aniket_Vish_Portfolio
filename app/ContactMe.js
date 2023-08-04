@@ -1,7 +1,28 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React,{useRef} from 'react'
 
 function ContactMe() {
+
+
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_anucc9h', 'template_78l2ilq', form.current, 'h0rUXr_2VL7LxGlBW')
+            .then((result) => {
+                console.log(result.text);
+                console.log(
+                    "successfully send"
+                )
+            }, (error) => {
+                console.log(error.text);
+                console.log(
+                    "not send"
+                )
+            });
+    };
+
     return (
         <div className='mb-20'>
             <div className='flex gap-2 lg:justify-center lg:ml-0 ml-20'>
@@ -35,7 +56,7 @@ function ContactMe() {
                             className='lg:hidden'
                         />
 
-                        <form>
+                        <form ref={form} onSubmit={sendEmail}>
                             <div className='flex sm:flex-col'>
                                 <div className='mr-4'>
                                     <h1 className='text-base font-[Poppins] font-semibold text-[#EEEEEE] pb-2'>Your name</h1>

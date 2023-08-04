@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react'
 import ProjectCard from './ProjectCard';
 
-function projects() {
+function Projects() {
 
     const [all, setAll] = useState(false)
     const [react, setReact] = useState(true)
@@ -129,4 +129,4 @@ function projects() {
     )
 }
 
-export default projects
+export default Projects
