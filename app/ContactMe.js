@@ -26,7 +26,7 @@ function ContactMe() {
                     />
                 </div>
 
-                <div className='flex flex-col -mt-14 lg:mt-20 xxs:mt-14 lg:mr-0 lg:justify-center  mr-14'>
+                <div className='flex flex-col -mt-14 lg:mt-20 xxs:mt-14 lg:mr-0 lg:justify-center  mr-14' id='contact'>
                     <div className=' flex flex-col gap-10'>
                         <Image src="/keyboard.png"
                             alt="growth"
@@ -60,7 +60,7 @@ function ContactMe() {
                                     required
                                     placeholder="Write down here..."
                                     name="message"
-                                    class="block w-[430px] h-56 sm:w-96 xs:w-80  text-[#EEEEEE] bg-[rgba(57,62,70,0.5)] rounded-xl resize-none p-4"
+                                    className="block w-[430px] h-56 sm:w-96 xs:w-80  text-[#EEEEEE] bg-[rgba(57,62,70,0.5)] rounded-xl resize-none p-4"
                                 ></textarea>
                             </div>
                         </form>

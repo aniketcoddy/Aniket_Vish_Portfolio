@@ -1,10 +1,11 @@
-import Contact from './components/Contact'
-import ContactMe from './components/ContactMe'
-import Navbar from './components/Navbar'
-import Projects from './components/Projects'
-import Social from './components/Social'
+import About from './About'
+import ContactMe from './ContactMe'
+import Navbar from './Navbar'
+import Projects from './Projects'
+import Social from './Social'
 import './globals.css'
 import { Inter } from 'next/font/google'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,14 +18,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body>
-        <div>
+      <body>  
           <Navbar />
           <div className={inter.className}>{children}</div>
+          <About/>
           <Projects/>
           <ContactMe/>
           <Social/>
-        </div>
       </body>
     </html>
   )

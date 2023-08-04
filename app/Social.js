@@ -15,7 +15,7 @@ function Social() {
 
 
     return (
-        <div className=" flex flex-col items-center justify-center" >
+        <div className=" flex flex-col items-center justify-center" id='social' >
             <div className="flex flex-row gap-5 " id="Social">
                 <a href="https://wa.me/7302918014" target="_blank"><Image alt="Image" width={100} height={100}  src={onhover ? "/1753788.png" : "/wassapp.png"} className="w-11 h-11" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} /></a>
                 <a href="https://www.linkedin.com/in/aniket-vishnoi-a19940221" target="_blank"><Image alt="Image" width={100} height={100}  src={onhover ? "/LinkedIn_icon_circle.svg.png" : "/linkid.png"} className="w-11 h-11" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} /></a>
