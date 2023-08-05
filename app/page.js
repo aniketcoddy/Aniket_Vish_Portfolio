@@ -1,10 +1,11 @@
 'use client'
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
 
   return (
-    <div  className="flex lg:flex-col lg:mt-16 mt-24  justify-between lg:justify-center lg:items-center" id="home">
+    <div className="flex lg:flex-col lg:mt-16 mt-24  justify-between lg:justify-center lg:items-center" id="home">
       <div className="mt-40 lg:mt-20 ml-44 xl:ml-32 lg:ml-0 lg:justify-center lg:items-center">
         <div className="lg:flex-col lg:flex lg:justify-center lg:items-center">
           <h1 className="text-[#EEEEEE] font-[Poppins] font-bold lg:text-5xl text-7xl xl:text-6xl xs:text-4xl  pb-5">
@@ -15,46 +16,46 @@ export default function Home() {
           </h2>
         </div>
         <div className=" hidden lg:flex lg:justify-center lg:items-center">
-        <Image
-          alt="me"
-          width={320}
-          height={100}
-          src="/me.png"
-          className="rounded-xl lg:w-64 xs:w-52 m-4" style={{boxShadow:"rgb(0, 173, 181) 0px 1px 17px 8px"}}
-        />
-      </div>
-      <div className="lg:flex lg:flex-col lg:justify-center lg:items-center" >
-        <div>
-          <p className="text-[white] font-[Poppins]  text-base xl:text-sm xl:w-96 xs:w-72 lg:mt-3 lg:text-base w-[560px] xs:text-sm font-normal pb-4">
-          A driven and self-taught web developer looking to use my organisational skills and abilities at your business so that I can advance professionally,
-          </p>
+          <Image
+            alt="me"
+            width={320}
+            height={100}
+            src="/me.png"
+            className="rounded-xl lg:w-64 xs:w-52 m-4" style={{ boxShadow: "rgb(0, 173, 181) 0px 1px 17px 8px" }}
+          />
         </div>
-        <div className="flex mt-2">
-          <a
-            href="/"
-            className="flex items-center p-2 px-4 rounded-3xl mr-2 bg-[#00ADB5] hover:bg-[#3b7477]"
-          >
-            <h1 className="text-[#FFFFFF] font-[Poppins] font-normal text-base drop-shadow-md">
-              Hire Me
-            </h1>
-          </a>
-          <a
-          href="Aniket_Vishnoi_CV.jpg"
-          download
-            className="flex items-center px-4 p-2 rounded-3xl mr-2 bg-[#393E46] hover:bg-[#101b2f]"
-          >
-            <h1 className="text-[#FFFFFF] font-[Poppins] font-normal text-base drop-shadow-md">
-              Download CV
-            </h1>
-            <Image
-              alt="download icon"
-              width={24}
-              height={100}
-              src="/download.png"
-              className="ml-1 drop-shadow-md"
-            />
-          </a>
-        </div>
+        <div className="lg:flex lg:flex-col lg:justify-center lg:items-center" >
+          <div>
+            <p className="text-[white] font-[Poppins]  text-base xl:text-sm xl:w-96 xs:w-72 lg:mt-3 lg:text-base w-[560px] xs:text-sm font-normal pb-4">
+              A driven and self-taught web developer looking to use my organisational skills and abilities at your business so that I can advance professionally,
+            </p>
+          </div>
+          <div className="flex mt-2">
+            <a
+              href="/"
+              className="flex items-center p-2 px-4 rounded-3xl mr-2 bg-[#00ADB5] hover:bg-[#3b7477]"
+            >
+              <h1 className="text-[#FFFFFF] font-[Poppins] font-normal text-base drop-shadow-md">
+                Hire Me
+              </h1>
+            </a>
+
+            <Link href="/Aniket_Vishnoi_CV.pdf" target="_blank"
+                className="flex items-center px-4 p-2 rounded-3xl mr-2 bg-[#393E46] hover:bg-[#101b2f]">
+              
+                <h1 className="text-[#FFFFFF] font-[Poppins] font-normal text-base drop-shadow-md">
+                  Download CV
+                </h1>
+                <Image
+                  alt="download icon"
+                  width={24}
+                  height={100}
+                  src="/download.png"
+                  className="ml-1 drop-shadow-md"
+                />
+             
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -64,7 +65,7 @@ export default function Home() {
           width={320}
           height={100}
           src="/me.png"
-          className="rounded-xl mr-44 xl:mr-16 mt-24 xl:w-72" style={{boxShadow:"rgb(0, 173, 181) 0px 1px 17px 8px"}}
+          className="rounded-xl mr-44 xl:mr-16 mt-24 xl:w-72" style={{ boxShadow: "rgb(0, 173, 181) 0px 1px 17px 8px" }}
         />
       </div>
     </div>

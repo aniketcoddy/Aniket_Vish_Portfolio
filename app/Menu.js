@@ -1,13 +1,31 @@
-import React from 'react'
+import React ,{useEffect , useState} from 'react'
 import { Link} from 'react-scroll'
 
 function Menu({menu}) {
 
+    const [scroll, setScroll] = useState(true)
+    
+    const changeBackground = () => {
+        if (window.scrollY > 100) {
+          setScroll(false);
+        }  else {
+            setScroll(true);
+          }
+      };
+
+      useEffect(()=>{
+        window.addEventListener("scroll", changeBackground);
+
+        return () => {
+            window.removeEventListener('scroll', changeBackground);
+          };
+      })
+    
     return (
         <div > 
            
             <div>
-                <ul className={`flex flex-col fixed mr-96 z-10 ${menu ? '-top-96': 'top-[74px]'} transition-all duration-[1s] shadow-2xl shadow-[#00ADB5] bg-[#1b2129] w-full`}>
+                <ul className={`flex flex-col fixed mr-96 z-10 ${menu ? '-top-96': 'top-[74px]'} transition-all duration-[1s] shadow-2xl ${scroll ?"":"shadow-[#00ADB5]"} bg-[#1b2129] w-full`}>
                 <Link to="home" spy={true} smooth={true} offset={-40} duration={700}><div className='hover:bg-[#00ADB5] hover:cursor-pointer' ><li className='text-[#EEEEEE]  hover:text-[#1b2128] text-lg p-3 ml-7 w-11 font-[Poppins]'>Home</li></div></Link>
                 <Link to="about" spy={true} smooth={true} offset={-40} duration={700}><div className='hover:bg-[#00ADB5] hover:cursor-pointer' ><li className='text-[#EEEEEE]  hover:text-[#1b2128] text-lg p-3 ml-7 font-[Poppins] w-11'>About</li></div></Link>
                 <Link to="projects" spy={true} smooth={true} offset={-40} duration={700}><div className='hover:bg-[#00ADB5] hover:cursor-pointer' ><li className='text-[#EEEEEE]  hover:text-[#1b2128] text-lg p-3 ml-7 font-[Poppins] w-11'>Projects</li></div></Link>
