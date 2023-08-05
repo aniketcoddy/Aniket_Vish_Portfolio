@@ -8,8 +8,17 @@ module.exports = {
   theme: {
 
     screens: {
-      "2xl": { max: "1440px" },
+      "5xl": { max: "2301px" },
+      // => @media (max-width: 2650px) { ... }
+
+      "4xl": { max: "2001px" },
+      // => @media (max-width: 2000px) { ... }
+
+      "3xl": { max: "1537px" },
       // => @media (max-width: 1535px) { ... }
+
+      "2xl": { max: "1440px" },
+      // => @media (max-width: 1440px) { ... }
 
       xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }

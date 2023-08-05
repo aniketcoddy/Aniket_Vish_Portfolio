@@ -21,9 +21,9 @@ export default function RootLayout({ children }) {
           <Navbar />
           <div className={inter.className}>{children}</div>
           <About/>
-          <Projects/>
-          <ContactMe/>
-          <Social/>
+          {/* <Projects/> */}
+          {/* <ContactMe/>
+          <Social/> */}
       </body>
     </html>
   )
