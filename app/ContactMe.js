@@ -26,62 +26,62 @@ function ContactMe() {
     return (
         <div className='mb-20'>
             <div className='flex gap-2 lg:justify-center lg:ml-0 ml-20'>
-                <h1 className='text-6xl font-semibold text-[#EEEEEE] lg:text-5xl xs:text-4xl  font-[Roboto]'>Contact</h1>
-                <h1 className='text-6xl font-semibold text-[#00ADB5] lg:text-5xl xs:text-4xl  font-[Roboto]'>Me</h1>
+                <h1 className='3xl:text-6xl 4xl:text-7xl text-8xl font-semibold text-[#EEEEEE] lg:text-5xl xs:text-4xl  font-[Roboto]'>Contact</h1>
+                <h1 className='3xl:text-6xl 4xl:text-7xl text-8xl font-semibold text-[#00ADB5] lg:text-5xl xs:text-4xl  font-[Roboto]'>Me</h1>
             </div>
 
-            <div className='flex  justify-center gap-60'>
-                <div className='flex mt-28 gap-4 lg:hidden '>
+            <div className='flex justify-between lg:justify-center'>
+                <div className='flex mt-28 ml-24 xl:ml-0 gap-4 lg:hidden'>
                     <Image src="/point.png"
                         alt="arrow"
                         width={100}
                         height={100}
-                        className='transform rotate-180 h-32 w-32 mt-32'
+                        className='transform rotate-180 3xl:h-32 4xl:h-36 4xl:w-36 h-48 w-48 3xl:w-32 mt-40 3xl:mt-32'
                     />
 
                     <Image src="/step.png"
                         alt="growth"
-                        width={300}
+                        width={600}
                         height={0}
-                        className='h-96 lg:h-72 '
+                        className='3xl:h-96 3xl:w-72 4xl:w-96 4xl:h-[500px] h-[700px] lg:h-72 '
                     />
                 </div>
 
-                <div className='flex flex-col -mt-14 lg:mt-20 xxs:mt-14 lg:mr-0 lg:justify-center  mr-14' id='contact'>
+                <div className='flex flex-col -mt-14 lg:mt-20 xxs:mt-14 lg:mr-0 lg:justify-center mr-14' id='contact'>
                     <div className=' flex flex-col gap-10'>
                         <Image src="/keyboard.png"
                             alt="growth"
-                            width={100}
+                            width={200}
                             height={100}
-                            className='lg:hidden'
+                            className=' 3xl:w-28 lg:hidden'
                         />
 
                         <form ref={form} onSubmit={sendEmail}>
-                            <div className='flex sm:flex-col'>
+                            <div className='flex sm:flex-col  3xl:mr-32 2xl:mr-16 xl:mr-0'>
                                 <div className='mr-4'>
-                                    <h1 className='text-base font-[Poppins] font-semibold text-[#EEEEEE] pb-2'>Your name</h1>
+                                    <h1 className='3xl:text-base 4xl:text-2xl text-3xl font-[Poppins] font-semibold text-[#EEEEEE] pb-4 3xl:pb-2'>Your name</h1>
                                     <input required
                                         type="text"
                                         name="to_name"
                                         placeholder="Name"
-                                        className="text-[#EEEEEE] sm:w-96 xs:w-80   p-3 bg-[rgba(57,62,70,0.5)] rounded-xl self-stretch" />
+                                        className="text-[#EEEEEE]  w-96 sm:w-96 3xl:w-52 xs:w-80 3xl:p-3 4xl:p-5 p-8 bg-[rgba(57,62,70,0.5)] rounded-xl self-stretch" />
                                 </div>
                                 <div>
-                                    <h1 className='text-base font-[Poppins] font-semibold text-[#EEEEEE] pb-2'>Your Email</h1>
+                                    <h1 className='3xl:text-base 4xl:text-2xl text-3xl font-[Poppins] font-semibold text-[#EEEEEE] pb-4 3xl:pb-2'>Your Email</h1>
                                     <input required
                                         type="text"
                                         name="to_name"
                                         placeholder="Email"
-                                        className="text-[#EEEEEE]  sm:w-96 xs:w-80  p-3 bg-[rgba(57,62,70,0.5)] rounded-xl self-stretch" />
+                                        className="text-[#EEEEEE]  w-96  3xl:w-52 sm:w-96 xs:w-80  3xl:p-3 4xl:p-5 p-8 bg-[rgba(57,62,70,0.5)] rounded-xl self-stretch" />
                                 </div>
                             </div>
                             <div className='mt-3'>
-                                <h1 className='text-base font-[Poppins] font-semibold text-[#EEEEEE] pb-2'>Message</h1>
+                                <h1 className='3xl:text-base 4xl:text-2xl text-3xl font-[Poppins] font-semibold text-[#EEEEEE] pb-4 3xl:pb-2'>Message</h1>
                                 <textarea
                                     required
                                     placeholder="Write down here..."
                                     name="message"
-                                    className="block w-[430px] h-56 sm:w-96 xs:w-80  text-[#EEEEEE] bg-[rgba(57,62,70,0.5)] rounded-xl resize-none p-4"
+                                    className="block 3xl:w-[430px] 3xl:h-56 w-[780px] h-96 4xl:[600px] 4xl:h-80 sm:w-96 xs:w-80 text- text-[#EEEEEE] bg-[rgba(57,62,70,0.5)] rounded-xl resize-none p-4"
                                 ></textarea>
                             </div>
                         </form>

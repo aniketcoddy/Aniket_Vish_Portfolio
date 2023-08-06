@@ -40,10 +40,10 @@ function Navbar() {
                 <div className=' flex lg:hidden'>
                     <div className='flex items-center'>
                         <ul className='flex'>
-                            <li className='2xl:ml-16 5xl:ml-36 4xl:ml-16 ml-48 text-[#EEEEEE] 2xl:text-lg 5xl:text-3xl 4xl:text-xl text-4xl 2xl:hover:text-xl hover:text-3xl  hover:text-[#00ADB5] w-11 font-[Poppins] hover:cursor-pointer'><Link to="home" spy={true} smooth={true} offset={-70} duration={700}>Home</Link></li>
-                            <li className='2xl:ml-16 5xl:ml-36 4xl:ml-16 ml-48 text-[#EEEEEE] 2xl:text-lg 5xl:text-3xl 4xl:text-xl text-4xl 2xl:hover:text-xl hover:text-3xl  hover:text-[#00ADB5] font-[Poppins] w-11 hover:cursor-pointer'><Link to="about" spy={true} smooth={true} offset={-100} duration={700}>About</Link></li>
-                            <li className='2xl:ml-16 5xl:ml-36 4xl:ml-16 ml-48 text-[#EEEEEE] 2xl:text-lg 5xl:text-3xl 4xl:text-xl text-4xl 2xl:hover:text-xl hover:text-3xl  hover:text-[#00ADB5] font-[Poppins] w-11 hover:cursor-pointer'><Link to="projects" spy={true} smooth={true} offset={-70} duration={700}>Projects</Link></li>
-                            <li className='2xl:ml-16 5xl:ml-36 4xl:ml-16 ml-48 text-[#EEEEEE] 2xl:text-lg 5xl:text-3xl 4xl:text-xl text-4xl 2xl:hover:text-xl hover:text-3xl  hover:text-[#00ADB5] font-[Poppins] w-11 hover:cursor-pointer'><Link to="contact" spy={true} smooth={true} offset={-150} duration={700}>Contact</Link></li>
+                            <li className='2xl:ml-16 5xl:ml-36 4xl:ml-16 ml-48 text-[#EEEEEE] 2xl:text-lg 5xl:text-3xl 4xl:text-xl text-4xl 2xl:hover:text-xl 4xl:hover:text-lg  hover:text-[#00ADB5] w-11 font-[Poppins] hover:cursor-pointer'><Link to="home" spy={true} smooth={true} offset={-70} duration={700}>Home</Link></li>
+                            <li className='2xl:ml-16 5xl:ml-36 4xl:ml-16 ml-48 text-[#EEEEEE] 2xl:text-lg 5xl:text-3xl 4xl:text-xl text-4xl 2xl:hover:text-xl 4xl:hover:text-lg  hover:text-[#00ADB5] font-[Poppins] w-11 hover:cursor-pointer'><Link to="about" spy={true} smooth={true} offset={-100} duration={700}>About</Link></li>
+                            <li className='2xl:ml-16 5xl:ml-36 4xl:ml-16 ml-48 text-[#EEEEEE] 2xl:text-lg 5xl:text-3xl 4xl:text-xl text-4xl 2xl:hover:text-xl 4xl:hover:text-lg  hover:text-[#00ADB5] font-[Poppins] w-11 hover:cursor-pointer'><Link to="projects" spy={true} smooth={true} offset={-70} duration={700}>Projects</Link></li>
+                            <li className='2xl:ml-16 5xl:ml-36 4xl:ml-16 ml-48 text-[#EEEEEE] 2xl:text-lg 5xl:text-3xl 4xl:text-xl text-4xl 2xl:hover:text-xl 4xl:hover:text-lg  hover:text-[#00ADB5] font-[Poppins] w-11 hover:cursor-pointer'><Link to="contact" spy={true} smooth={true} offset={-150} duration={700}>Contact</Link></li>
                         </ul>
                     </div>
                     <div className='flex hover:cursor-pointer'>
