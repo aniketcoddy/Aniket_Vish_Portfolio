@@ -11,7 +11,7 @@ function ProjectCard({ image, git, launch, name, topic, description }) {
           height={100}
           src={image} className='xs:w-24 3xl:w-36 4xl:w-72 xxs:w-20' />
         <div className='flex mt-2'>
-          <a href={git} className='flex justify-center items-center'><h1 className='3xl:text-sm text-3xl  xs:text-xs xxs:text-[9px] xs:m-1  xs:mt-3 font-[Roboto] text-[#000000] border-[#00ADB5] bg-[#00ADB5] m-2 border-2  px-1 rounded-lg font-semibold'>Git</h1></a>
+          <a href={git} target="_blank" className='flex justify-center items-center'><h1 className='3xl:text-sm text-3xl  xs:text-xs xxs:text-[9px] xs:m-1  xs:mt-3 font-[Roboto] text-[#000000] border-[#00ADB5] bg-[#00ADB5] m-2 border-2  px-1 rounded-lg font-semibold'>Git</h1></a>
           <a href={launch} target="_blank" className='flex justify-center items-center'><h1 className='3xl:text-sm text-3xl  xs:text-xs xxs:text-[9px] xs:m-1  xs:mt-3 font-[Roboto] text-[#000000] border-[#00ADB5] bg-[#00ADB5] m-2 border-2  px-1 rounded-lg font-semibold'>Launch</h1></a>
         </div>
       </div>
